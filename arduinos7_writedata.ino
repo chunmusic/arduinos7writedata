@@ -12,7 +12,7 @@
 // Enter a MAC address and IP address for your controller below.
 // The IP address will be dependent on your local network:
 byte mac[] = { 
-  0x28, 0x63, 0x36, 0x8E, 0x76, 0xE3 }; // là địa chỉ media access control xem trong con plc
+  0x28, 0x63, 0x36, 0x8E, 0x76, 0xE3 }; 
 
 IPAddress Local(192,168,0,90); // Local Address
 IPAddress PLC(192,168,0,124);   // PLC Address
@@ -24,8 +24,8 @@ char pass[] = "yourpassword";  // Your network password (if any)*/
 IPAddress Gateway(192, 168, 0, 1);
 IPAddress Subnet(255, 255, 255, 0);
 
-int DBNum = 1; // This DB must be present in your PLC
-int Buffer[1024]; // my data just int type !!!!!!!!!!!!!!!!!!!!!!!!!!!!!***************************************************
+int DBNum = 1; // 
+int Buffer[1024]; // 
 
 S7Client Client(_S7WIRED);
 
